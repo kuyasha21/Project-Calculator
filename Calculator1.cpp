@@ -2,6 +2,10 @@
 
 using namespace std;
 
+void multiple () {
+    cout << "Hello" ;
+}
+
 int main(){
 
     cout << "what opperation you want to do : " ;
