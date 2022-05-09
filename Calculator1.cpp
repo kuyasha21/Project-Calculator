@@ -2,13 +2,25 @@
 
 using namespace std;
 
-void multiple () {
+void Add () {
+    cout << "Hello" ;
+}
+
+void Sub () {
+    cout << "Hello" ;
+}
+
+void Mul () {
+    cout << "Hello" ;
+}
+
+void Div () {
     cout << "Hello" ;
 }
 
 int main(){
 
-    cout << "what opperation you want to do : " ;
+    cout << "What operation you want to do : " ;
 
     char ch ;
 
