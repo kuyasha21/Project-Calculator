@@ -3,19 +3,92 @@
 using namespace std;
 
 void Add () {
-    cout << "Hello" ;
+
+     
+
+     int num1 , num2  ;
+    
+    for( ; ; ){
+
+        cin >> num1 >>num2 ;
+
+       int sum = num1+num2 ;
+
+       if(num1==0 && num2==0){
+
+           break;
+       }
+
+       cout << sum <<endl;
+
+    }
 }
 
 void Sub () {
-    cout << "Hello" ;
+
+     cout <<"Enter two number : ";
+
+     int num1 , num2 ;
+    
+    for( ; ; ){
+
+        cin >> num1 >>num2 ;
+
+       int sub = num1-num2 ;
+
+       if(num1==0 && num2==0){
+
+           break;
+       }
+
+       cout << sub <<endl;
+
+    }
 }
 
 void Mul () {
-    cout << "Hello" ;
+
+     cout <<"Enter two number : ";
+
+     int num1 , num2 ;
+    
+    for( ; ; ){
+
+        cin >> num1 >>num2 ;
+
+       int mul = num1*num2 ;
+
+       if(num1==0 && num2==0){
+
+           break;
+       }
+
+       cout << mul <<endl;
+
+    }
+   
 }
 
 void Div () {
-    cout << "Hello" ;
+
+    cout <<"Enter two number : ";
+  
+    int num1 , num2 ;
+    
+    for( ; ; ){
+
+        cin >> num1 >>num2 ;
+
+       int Div = num1/num2 ;
+
+       if(num1==0 && num2==0){
+
+           break;
+       }
+
+       cout << Div <<endl;
+
+    }
 }
 
 int main(){
@@ -28,26 +101,24 @@ int main(){
 
     switch (ch){
 
-        case '+' : cout << "Addition" ;
+        case '+' : Add() ;
 
         break;
 
-        case '-' : cout << "Substraction" ;
+        case '-' :Sub() ;
 
         break ;
 
-        case '*' : cout << "Multiplication" ;
+        case '*' : Mul() ;
 
         break;
 
-        case '/' : cout << "Division" ;
+        case '/' :Div() ;
 
         break;
 
         default : cout << "Error" ;
     }
-
-
 
     return 0;
 }
