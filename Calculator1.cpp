@@ -20,7 +20,7 @@ void Mul () {
         cout << "Enter " << i << " value: ";
         cin >> s;
 
-        if (char(s) == '00'){
+        if (s == 0){
             break;
         }
 
@@ -43,7 +43,7 @@ void Div () {
         cout << "Enter " << i << " value : " ;
         cin >> s;
 
-        if (char(s) == '00'){
+        if (s == 0){
             break;
         }
 
