@@ -4,90 +4,51 @@ using namespace std;
 
 void Add () {
 
-     
-
-     int num1 , num2  ;
-    
-    for( ; ; ){
-
-        cin >> num1 >>num2 ;
-
-       int sum = num1+num2 ;
-
-       if(num1==0 && num2==0){
-
-           break;
-       }
-
-       cout << sum <<endl;
-
-    }
 }
 
 void Sub () {
 
-     cout <<"Enter two number : ";
-
-     int num1 , num2 ;
-    
-    for( ; ; ){
-
-        cin >> num1 >>num2 ;
-
-       int sub = num1-num2 ;
-
-       if(num1==0 && num2==0){
-
-           break;
-       }
-
-       cout << sub <<endl;
-
-    }
 }
 
 void Mul () {
 
-     cout <<"Enter two number : ";
-
-     int num1 , num2 ;
+    int n=1;
+    cout << "----------Enter '00' to quit----------" << endl; ;
     
-    for( ; ; ){
+    for (int i=1; ; i++) {
+        int s;
+        cout << "Enter " << i << " value: ";
+        cin >> s;
 
-        cin >> num1 >>num2 ;
+        if (s == 0){
+            break;
+        }
 
-       int mul = num1*num2 ;
-
-       if(num1==0 && num2==0){
-
-           break;
-       }
-
-       cout << mul <<endl;
-
+        n *= s;
+        cout << "Result : " << n << endl;
     }
    
 }
 
 void Div () {
 
-    cout <<"Enter two number : ";
-  
-    int num1 , num2 ;
-    
-    for( ; ; ){
+    cout << "----------Enter '00' to quit----------" << endl;
 
-        cin >> num1 >>num2 ;
+    double n;
+    cout << "Enter 1 value: ";
+    cin >> n;
 
-       int Div = num1/num2 ;
+    for(int i=2; ; i++){
+        double s;
+        cout << "Enter " << i << " value : " ;
+        cin >> s;
 
-       if(num1==0 && num2==0){
+        if (s == 0){
+            break;
+        }
 
-           break;
-       }
-
-       cout << Div <<endl;
-
+        n /= s;
+        cout << "Result : " << n << endl;
     }
 }
 
@@ -96,25 +57,20 @@ int main(){
     cout << "What operation you want to do : " ;
 
     char ch ;
-
     cin >> ch ;
 
     switch (ch){
 
         case '+' : Add() ;
-
         break;
 
         case '-' :Sub() ;
-
         break ;
 
         case '*' : Mul() ;
-
         break;
 
         case '/' :Div() ;
-
         break;
 
         default : cout << "Error" ;
